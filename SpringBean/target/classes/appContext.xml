@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 让Spring管理 Student bean   -->
+    <bean id="student" class="org.example.Student">
+        <property name="name" value="小明"></property>
+        <property name="homework" ref="homework"></property>
+    </bean>
+
+    <!-- 让Spring管理Homework bean-->
+    <bean id="homework" class="org.example.Homework">
+        <property name="content" value="how to calc 3+2 ?"></property>
+    </bean>
+
+
+</beans>
