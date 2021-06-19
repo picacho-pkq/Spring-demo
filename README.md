@@ -1,1 +1,1 @@
-SpringBean是一个简单的手写Spring框架
+SpringBean是一个简单的手写Spring框架，研读有助于理解IOC容器和依赖注入。
